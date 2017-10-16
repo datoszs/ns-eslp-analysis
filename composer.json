@@ -1,0 +1,22 @@
+{
+    "name": "datos/analysis",
+    "description": "Analysis of decision of Supreme Court of Czech Republic towards ESLP usage.",
+    "type": "project",
+    "license": ["Unknown"],
+    "require": {
+        "php": ">=7.1.0",
+        "nette/finder": "^2.4",
+        "nette/forms": "^2.4",
+        "nette/safe-stream": "^2.3",
+        "nette/utils": "^2.4",
+        "tracy/tracy": "^2.4",
+        "league/csv": "^8.0",
+        "phpoffice/phpexcel": "^1.8"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/datoszs/content-transformer/"
+        }
+    ]
+}
