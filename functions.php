@@ -57,7 +57,7 @@ function getKeysGroups()
     $content = file_get_contents($outputDir . 'eslp.csv');
     return [
         'sp.zn.' => transformESLPNumberToRegex($content),
-        'Evropský soud' => ['#\b(Evropský soud|Evropského soudu|Evropskému soudu|Evropský soud|Evropském soudu|Evropským soudem)\b#ui'],
+        'Evropský soud' => ['#\b(Evropský' . WHITESPACES . 'soud|Evropského' . WHITESPACES . 'soudu|Evropskému' . WHITESPACES . 'soudu|Evropský' . WHITESPACES . 'soud|Evropském' . WHITESPACES . 'soudu|Evropským' . WHITESPACES . 'soudem)\b#ui'],
         'ESLP' => ['#\b(ESLP)\b#ui'],
     ];
 }
